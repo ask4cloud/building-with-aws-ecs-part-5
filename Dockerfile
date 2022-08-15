@@ -14,6 +14,7 @@ COPY ./node_modules /opt/app/node_modules
 COPY ./package.json /opt/app/package.json
 COPY ./start.sh /opt/app/start.sh
 RUN chmod +x /opt/app/start.sh
+RUN ls
 
 USER nextjs
 
